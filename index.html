@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script src="index.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://localhost:8080/webpack-dev-server.js"></script>		
 
-	</head>
-	<body>		
-		<h1>game of life</h1>
-	</body>
+<head>
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://localhost:8080/webpack-dev-server.js"></script>
+	<link rel="stylesheet" media="all" href="./src/css/reset.css" />
+	<link rel="stylesheet" media="all" href="./src/css/style.css" />
+	<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+	<h1>Game of Life</h1>
+	<div class="container">
+		<table id="table"></table>
+		<div class="controls">
+			<div class="buttons">
+				<span id="play" class="button">
+					<i class="fa fa-play"></i>
+					<span>Play</span>
+				</span>
+				<span id="pause" class="button">
+					<i class="fa fa-pause"></i>
+					<span>Pause</span>
+				</span>
+				<span id="nextStep" class="button">
+					<i class="fa fa-step-forward"></i>
+					<span>Next step</span>
+				</span>
+				<span id="reset" class="button">
+					<i class="fa fa-undo"></i>
+					<span>Reset</span>
+				</span>
+			</div>
+		</div>
+		<div id="counter" class="counter" >Generation: 0</div>
+	</div>
+</body>
+
 </html>

@@ -14,3 +14,14 @@ export function arrayify(string) {
         .filter(a => !a.match(/\s/))
     );
 }
+
+export function randomArray(width, height, probability) {
+    var arr = [];
+    for (var i = 0 ; i < width; i++) {
+        arr[i] = [];
+        for (var j = 0; j < height; j++) {
+            arr[i][j] = String(Math.random() * (Math.random() * (probability + 1)) | 0);
+        }
+    }
+    return arr;
+}
